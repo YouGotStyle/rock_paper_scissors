@@ -9,10 +9,10 @@
 <body>
     <script>
 
-
+        function getPlayerChoice() {
         let playerInput = prompt("Type Rock, Paper or Scissors");
         pm = playerInput;
-        pm = pm.toLocaleLowerCase();
+        pm = pm.toLowerCase();
 
         if (pm === "rock") {
             console.log(1);
@@ -22,7 +22,7 @@
             console.log(3);
         } else {
             console.log("Please type only Rock, Paper or Scissors")
-        }
+        }}
 
 
         function getComputerChoice() {
@@ -34,17 +34,6 @@
         } else {
             return("scissors");
         }}
-
-        function getPlayerChoice() {
-            let playerInput = prompt("Type Rock, Paper or Scissors");
-            playerInput = playerInput.toLocaleLowerCase();
-            return("playerInput");
-        }
-
-        getComputerChoice();
-        getPlayerChoice();
-
-
     </script>
 </body>
 </html>
